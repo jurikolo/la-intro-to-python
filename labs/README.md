@@ -1,4 +1,4 @@
-# LAB 1
+# LAB 1, 2
 To execute unit test and print debug information (verbose) type:
 ```bash
 python3 -m doctest -v tasker.py
