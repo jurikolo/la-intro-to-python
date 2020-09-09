@@ -1,5 +1,6 @@
 common_usecases/cities.txt
 common_usecases/teams.txt
+Pipfile
 
 # Following is template from https://github.com/github/gitignore/blob/master/Python.gitignore
 # Byte-compiled / optimized / DLL files
