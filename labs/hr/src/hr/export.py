@@ -2,9 +2,12 @@ import json
 
 # TODO: implement conversion to JSON
 def export_to_json(users, path):
-    print("In export_to_json function")
-    print(f"Users: {users}, path: {path}")
-    return None
+    if path:
+        output_file = open(path, 'w+')
+        output_file.write(json.dumps(users, sort_keys=True, indent=4))
+        output_file.close()
+    else:
+        print(json.dumps(users, sort_keys=True, indent=4))
 
 def export_to_csv(users, path):
     if path:
