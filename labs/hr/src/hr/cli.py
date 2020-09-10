@@ -21,3 +21,8 @@ def main():
     print(args)
     user_list = users.get_users()
     print(user_list)
+    if args.format == "csv":
+        export.export_to_csv(user_list, args.path)
+    else:
+        export.export_to_json(user_list, args.path)
+    return 0
